@@ -66,7 +66,7 @@ export const questionApi = createApi({
       query: (voteData) => {
         const { id, vote } = voteData;
         return {
-          url: `/answers/postAnswer/${id}`,
+          url: `/questions/vote/${id}`,
           method: "PATCH",
           headers: {
             Authorization: `Bearer ${token}`,
